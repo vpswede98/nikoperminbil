@@ -1,0 +1,14 @@
+{
+  "name": "nikoperminbil",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marknadsledande inom att inte köpa din bil sedan 2026.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.123.0"
+  }
+}

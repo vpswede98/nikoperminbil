@@ -1,3 +1,9 @@
 node_modules/
 .dev.vars
 .wrangler/
+
+# lokala verktyg och skräpfiler
+.claude/
+.DS_Store
+Thumbs.db
+*.log
