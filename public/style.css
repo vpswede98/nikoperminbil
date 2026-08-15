@@ -106,8 +106,9 @@ a { color: inherit; }
   display: inline-block;
   overflow: hidden;
   vertical-align: bottom;
-  padding-top: 0.18em;
-  margin-top: -0.18em;
+  /* headroom for Å/Ä/Ö — the ring and dots sit above cap height */
+  padding-top: 0.42em;
+  margin-top: -0.42em;
 }
 [data-split] .w > i {
   display: inline-block;
@@ -128,8 +129,8 @@ a { color: inherit; }
   display: inline-block;
   overflow: hidden;
   vertical-align: bottom;
-  padding-top: 0.18em;
-  margin-top: -0.18em;
+  padding-top: 0.42em;
+  margin-top: -0.42em;
 }
 [data-split="chars"].in .ch { transform: none; }
 

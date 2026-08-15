@@ -335,7 +335,7 @@
   var PRICE = 4750000;
 
   function quip(bid) {
-    if (bid === PRICE) return "Äntligen en seriös spekulant. Tyvärr höjdes priset alldeles nyss, till 4 750 000 kr.";
+    if (bid === PRICE) return "Äntligen en seriös spekulant. Budet matchar priset exakt — vilket det gör i samtliga accepterade fall.";
     if (bid === 0) return "Noll kronor. Vi uppskattar ärligheten. Priset är 4 750 000 kr.";
     if (bid < 500000) return "Vi har valt att tolka ditt bud som humor. Marknaden skrattar inte. 4 750 000 kr.";
     if (bid < PRICE) return "Intressant bud. Vi har övervägt det noggrant i nej. Skillnad mot marknaden: " + fmt.format(PRICE - bid) + " kr.";
