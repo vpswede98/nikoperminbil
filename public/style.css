@@ -1216,6 +1216,29 @@ input[type="range"]::-moz-range-thumb {
 }
 .footer-tag { color: var(--gold-deep); margin: 0; }
 
+.footer-source { margin: 1.6em 0 0; }
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid var(--line-soft);
+  border-radius: 999px;
+  padding: 12px 20px;
+  transition: color 0.25s, border-color 0.25s, background 0.25s;
+}
+.source-link:hover,
+.source-link:focus-visible {
+  color: var(--ink);
+  border-color: rgba(227, 183, 78, 0.45);
+  background: rgba(227, 183, 78, 0.06);
+}
+.source-mark { flex: none; }
+
 /* ---------- reduced motion ---------- */
 
 @media (prefers-reduced-motion: reduce) {
