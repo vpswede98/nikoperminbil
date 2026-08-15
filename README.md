@@ -44,10 +44,9 @@ Sajten körs då på <http://localhost:8787>. Filerna i `public/` serveras direk
 
 ## Driftsättning
 
-Push till `main` driftsätter automatiskt via GitHub Actions
-([workflow](.github/workflows/deploy.yml)). Det kräver två secrets i repot —
-`CLOUDFLARE_API_TOKEN` och `CLOUDFLARE_ACCOUNT_ID`. Saknas de hoppar workflowet över
-driftsättningen i stället för att fallera.
+Push till `main` driftsätter automatiskt via Cloudflare Workers Builds, som är kopplat till
+det här repot. Bygget syns som en check på varje commit; inställningarna finns i
+Cloudflare-dashboarden, inte i repot.
 
 Manuellt går det lika bra:
 
