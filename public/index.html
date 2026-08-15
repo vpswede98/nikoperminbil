@@ -3,185 +3,382 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>niköperminbil — Marknadsledande inom att inte köpa din bil sedan 2026</title>
-<meta name="description" content="En trygg och professionell process för dig som vill köpa min bil. Fast pris. Inga bud.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230b2340'/%3E%3Cpath d='M20 62 L28 44 Q32 38 40 38 L62 38 Q70 38 74 44 L82 62 Z' fill='none' stroke='%23c9a24b' stroke-width='5'/%3E%3Ccircle cx='34' cy='64' r='7' fill='%23c9a24b'/%3E%3Ccircle cx='68' cy='64' r='7' fill='%23c9a24b'/%3E%3C/svg%3E">
+<title>niköperminbil — Ni köper min bil. Fast pris. Inga bud.</title>
+<meta name="description" content="Marknadsledande inom att inte köpa din bil sedan 2026. En trygg och cinematisk process för dig som vill köpa min bil. Fast pris: 4 750 000 kr.">
+<meta name="theme-color" content="#07080c">
+<link rel="canonical" href="https://nikoperminbil.se/">
+<meta property="og:title" content="niköperminbil — Ni köper min bil.">
+<meta property="og:description" content="Marknadsledande inom att inte köpa din bil sedan 2026. Fast pris: 4 750 000 kr. Inga bud. Ingen ånger.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nikoperminbil.se/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%2307080c'/%3E%3Cpath d='M20 62 L28 44 Q32 38 40 38 L62 38 Q70 38 74 44 L82 62 Z' fill='none' stroke='%23e3b74e' stroke-width='5'/%3E%3Ccircle cx='34' cy='64' r='7' fill='%23e3b74e'/%3E%3Ccircle cx='68' cy='64' r='7' fill='%23e3b74e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#top" class="logo">niköperminbil</a>
-    <nav class="site-nav" aria-label="Huvudmeny">
-      <a href="#bilen">Bilen</a>
-      <a href="#process">Processen</a>
-      <a href="#faq">Vanliga frågor</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"></span></div>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav-logo">nik<span class="au">ö</span>perminbil<span class="nav-tld">.se</span></a>
+  <nav class="nav-links" aria-label="Huvudmeny">
+    <a href="#bilen">Bilen</a>
+    <a href="#fordelar">Fördelar</a>
+    <a href="#process">Processen</a>
+    <a href="#forhandla">Förhandla</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a href="#kontakt" class="nav-price">4 750 000 kr</a>
 </header>
 
 <main id="top">
 
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <p class="eyebrow">Marknadsledande inom att inte köpa din bil sedan 2026</p>
-      <h1>Sveriges tryggaste väg till att äga min bil.</h1>
-      <p class="hero-lead">En noggrant utvald bil, ett rakt igenom seriöst köpförfarande, och ett pris som är satt av marknaden — det vill säga av oss.</p>
-
-      <div class="price-card">
-        <span class="price-label">Fast pris</span>
-        <span class="price-amount">4 750 000 kr</span>
-        <span class="price-note">Inga bud. Ingen förhandling. Ingen ånger.</span>
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="hero" aria-label="Intro">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-a" data-depth="0.35"></div>
+      <div class="blob blob-b" data-depth="0.55"></div>
+      <div class="blob blob-c" data-depth="0.2"></div>
+      <div class="hero-grid" data-depth="0.12"></div>
+      <div class="hero-watermark" data-depth="0.25">4&nbsp;750&nbsp;000</div>
+      <div class="beam beam-a" data-depth="0.4"></div>
+      <div class="beam beam-b" data-depth="0.6"></div>
+      <div class="dust" data-depth="0.8">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
       </div>
-
-      <a href="#process" class="cta">Ansök om att få köpa bilen</a>
-      <p class="fine-print">Bunden av vår egen bedömning. Ej bunden av Konsumentkreditlagen, eftersom det inte är ett lån.</p>
     </div>
+
+    <div class="hero-content" id="heroContent">
+      <p class="eyebrow hero-eyebrow">Marknadsledande inom att <em>inte</em> köpa din bil — sedan 2026</p>
+      <h1 class="hero-title" id="heroTitle">
+        <span class="line"><span data-split="chars">NI KÖPER</span></span>
+        <span class="line"><span data-split="chars">MIN BIL</span><span class="tld">.se</span></span>
+      </h1>
+      <p class="hero-sub reveal" style="--d:.9s">En (1) noggrant utvald bil. En process granskad av oss och godkänd av oss.<br>
+      Ett pris satt av marknaden — det vill säga av oss.</p>
+      <div class="hero-ctas reveal" style="--d:1.05s">
+        <a class="btn btn-gold" href="#kontakt" data-magnet>Ansök om att få köpa bilen</a>
+        <a class="btn btn-ghost" href="#bilen" data-magnet>Upplev bilen</a>
+      </div>
+      <p class="fine reveal" style="--d:1.2s">Ansökan är kostnadsfri. Det är den enda delen som är det.</p>
+    </div>
+
+    <a class="scrollcue" href="#bilen" aria-label="Scrolla ner">
+      <span class="scrollcue-label">Scrolla</span>
+      <span class="scrollcue-line" aria-hidden="true"></span>
+      <span class="scrollcue-fine">kostnadsfritt</span>
+    </a>
   </section>
 
-  <section id="bilen" class="section">
-    <div class="wrap">
-      <h2>Bilen</h2>
-      <p class="section-lead">Volvo V70 D3 Summum, 2011 — ett av de mest välkörda skattlagda relationsfordonen i Mellansverige.</p>
+  <!-- ======================= MARQUEE ======================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>VI KÖPER INTE DIN BIL&ensp;✦&ensp;NI KÖPER MIN BIL&ensp;✦&ensp;FAST PRIS: 4 750 000 KR&ensp;✦&ensp;INGA BUD&ensp;✦&ensp;INGEN ÅNGER&ensp;✦&ensp;</span>
+      <span>VI KÖPER INTE DIN BIL&ensp;✦&ensp;NI KÖPER MIN BIL&ensp;✦&ensp;FAST PRIS: 4 750 000 KR&ensp;✦&ensp;INGA BUD&ensp;✦&ensp;INGEN ÅNGER&ensp;✦&ensp;</span>
+    </div>
+  </div>
 
-      <div class="car-panel">
-        <svg class="car-art" viewBox="0 0 320 140" role="img" aria-label="Illustration av en herrgårdsvagn i profil">
-          <rect x="4" y="112" width="312" height="4" fill="currentColor" opacity="0.25"/>
-          <path d="M28 108
-                   L34 78
-                   Q40 60 62 56
-                   L92 50
-                   Q108 34 132 34
-                   L206 34
-                   Q222 34 232 48
-                   L252 64
-                   Q284 66 296 84
-                   L300 108"
-                fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-          <path d="M110 56 L120 36 L200 36 L214 56" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
-          <line x1="158" y1="36" x2="156" y2="56" stroke="currentColor" stroke-width="3"/>
-          <circle cx="90" cy="110" r="19" fill="none" stroke="currentColor" stroke-width="5"/>
-          <circle cx="250" cy="110" r="19" fill="none" stroke="currentColor" stroke-width="5"/>
-          <circle cx="90" cy="110" r="6" fill="currentColor"/>
-          <circle cx="250" cy="110" r="6" fill="currentColor"/>
+  <!-- ======================= SCROLL STORY: BILEN ======================= -->
+  <section class="story" id="bilen" aria-label="Bilen">
+    <div class="story-sticky">
+      <div class="story-vignette" aria-hidden="true"></div>
+
+      <header class="story-head">
+        <p class="eyebrow">Kapitel 01 — Objektet</p>
+        <h2 class="story-title"><span data-split="words">BILEN</span></h2>
+      </header>
+
+      <div class="story-stage" id="storyStage">
+        <svg class="car" id="carSvg" viewBox="0 0 920 360" role="img"
+             aria-label="Linjeillustration av en Volvo V70 herrgårdsvagn i profil, med strålkastare som lyser">
+          <defs>
+            <linearGradient id="beamGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#ffe9b0" stop-opacity="0.55"/>
+              <stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <g class="car-beams" aria-hidden="true">
+            <polygon points="852,214 1560,96 1560,330 852,242" fill="url(#beamGrad)"/>
+            <polygon points="852,220 1560,190 1560,360 852,246" fill="url(#beamGrad)" opacity="0.6"/>
+          </g>
+
+          <line class="car-ground draw" x1="30" y1="326" x2="890" y2="326"/>
+
+          <g class="car-body">
+            <!-- silhouette -->
+            <path class="draw" d="M96 282
+              Q86 244 98 210
+              L128 132
+              Q133 121 148 119
+              L520 111
+              Q560 112 588 122
+              L668 190
+              Q692 198 760 202
+              L820 208
+              Q856 214 862 240
+              Q870 258 870 282
+              L787 282
+              A72 72 0 0 0 645 282
+              L275 282
+              A72 72 0 0 0 133 282
+              Z"/>
+            <!-- windshield + side glass -->
+            <path class="draw thin" d="M574 126 L662 192"/>
+            <path class="draw thin" d="M150 132 L146 200 L648 196 L568 128 Z"/>
+            <!-- pillars / door seams -->
+            <line class="draw thin" x1="318" y1="130" x2="314" y2="252"/>
+            <line class="draw thin" x1="470" y1="127" x2="468" y2="256"/>
+            <line class="draw thin" x1="160" y1="204" x2="162" y2="262"/>
+            <!-- handles -->
+            <line class="draw thin" x1="338" y1="216" x2="374" y2="215"/>
+            <line class="draw thin" x1="492" y1="214" x2="528" y2="213"/>
+            <!-- roof rails -->
+            <path class="draw thin" d="M170 112 L180 104 L500 98 L510 106"/>
+            <!-- mirror -->
+            <path class="draw thin" d="M650 172 l30 -8 l6 12 l-28 8 Z"/>
+            <!-- taillight + headlight -->
+            <path class="draw thin" d="M100 214 l22 -2 l-4 26 l-22 2 Z"/>
+            <path class="car-lamp draw thin" d="M826 212 l32 6 q6 10 2 20 l-38 -6 Z"/>
+          </g>
+
+          <g class="wheel" data-wheel>
+            <circle class="draw" cx="204" cy="272" r="52"/>
+            <circle class="hub" cx="204" cy="272" r="9"/>
+            <g class="spokes">
+              <line x1="204" y1="272" x2="204" y2="228"/>
+              <line x1="204" y1="272" x2="246" y2="286"/>
+              <line x1="204" y1="272" x2="230" y2="308"/>
+              <line x1="204" y1="272" x2="178" y2="308"/>
+              <line x1="204" y1="272" x2="162" y2="286"/>
+            </g>
+          </g>
+          <g class="wheel" data-wheel>
+            <circle class="draw" cx="716" cy="272" r="52"/>
+            <circle class="hub" cx="716" cy="272" r="9"/>
+            <g class="spokes">
+              <line x1="716" y1="272" x2="716" y2="228"/>
+              <line x1="716" y1="272" x2="758" y2="286"/>
+              <line x1="716" y1="272" x2="742" y2="308"/>
+              <line x1="716" y1="272" x2="690" y2="308"/>
+              <line x1="716" y1="272" x2="674" y2="286"/>
+            </g>
+          </g>
         </svg>
 
-        <dl class="spec-list">
-          <div><dt>Märke</dt><dd>Volvo</dd></div>
-          <div><dt>Modell</dt><dd>V70 D3 Summum</dd></div>
-          <div><dt>Årsmodell</dt><dd>2011</dd></div>
-          <div><dt>Miltal</dt><dd>28 412 mil</dd></div>
-          <div><dt>Bränsle</dt><dd>Diesel</dd></div>
-          <div><dt>Växellåda</dt><dd>Automat, 6 steg</dd></div>
-          <div><dt>Färg</dt><dd>Vintergrå metallic</dd></div>
-          <div><dt>Antal ägare</dt><dd>1 (privatperson)</dd></div>
-          <div><dt>Besiktigad</dt><dd>Ja, senast i våras</dd></div>
-          <div><dt>Bränslenivå</dt><dd>Cirka en fjärdedel, för närvarande</dd></div>
-        </dl>
+        <!-- callouts -->
+        <div class="callout" style="--x:16%; --y:6%"  data-at="0.46"><span class="callout-dot"></span>Två nycklar ingår — varav en (1) fungerande</div>
+        <div class="callout" style="--x:52%; --y:1%"  data-at="0.52"><span class="callout-dot"></span>Genuin doft av 2011, delvis maskerad</div>
+        <div class="callout" style="--x:74%; --y:24%" data-at="0.58"><span class="callout-dot"></span>Besiktigad — senast i våras</div>
+        <div class="callout" style="--x:4%;  --y:52%" data-at="0.64"><span class="callout-dot"></span>Bränslenivå: cirka en fjärdedel, för närvarande</div>
+        <div class="callout" style="--x:66%; --y:78%" data-at="0.70"><span class="callout-dot"></span>Naturlig patina — ej rost, enligt ägaren</div>
+        <div class="callout" style="--x:22%; --y:84%" data-at="0.76"><span class="callout-dot"></span>Servicehistorik: fullständig, muntlig</div>
+
+        <!-- price stamp -->
+        <div class="stamp" id="stamp" aria-hidden="true">
+          <span class="stamp-price">4 750 000 KR</span>
+          <span class="stamp-sub">FAST PRIS · SATT AV MARKNADEN (OSS)</span>
+        </div>
       </div>
 
-      <ul class="value-props">
-        <li>Genuin doft av 2011, delvis maskerad.</li>
-        <li>Naturlig patina från tolv svenska vintrar — ej rost, enligt ägaren.</li>
-        <li>En (1) tidigare ägare med god kreditvärdighet.</li>
-        <li>Fullständig servicehistorik finns, dock ej i skriftlig form.</li>
-        <li>Två bilnycklar ingår, varav en fungerande.</li>
-        <li>Vinterdäck finns, i ett förråd, förmodligen.</li>
-      </ul>
+      <div class="story-captions">
+        <p class="caption" data-cap="0">Torslanda, 2011. En Volvo V70 D3 Summum lämnar fabriken.<br><em>Ingen anade då vad den skulle bli värd.</em></p>
+        <p class="caption" data-cap="1">Femton år senare står den i ett garage i Mellansverige.<br><em>Finare än någonsin, enligt ägaren.</em></p>
+        <p class="caption" data-cap="2">Varje detalj är noggrant dokumenterad.<br><em>Muntligen.</em></p>
+        <p class="caption" data-cap="3">Värderingen är klar.</p>
+      </div>
     </div>
   </section>
 
-  <section id="process" class="section section-alt">
-    <div class="wrap">
-      <h2>Så går det till</h2>
-      <p class="section-lead">En process framtagen för din trygghet, granskad av oss, och godkänd av oss.</p>
+  <!-- ======================= SPEC STRIP ======================= -->
+  <section class="specs" aria-label="Specifikationer">
+    <dl class="specs-grid">
+      <div class="reveal" style="--d:0s"><dt>Märke</dt><dd>Volvo</dd></div>
+      <div class="reveal" style="--d:.06s"><dt>Modell</dt><dd>V70 D3 Summum</dd></div>
+      <div class="reveal" style="--d:.12s"><dt>Årsmodell</dt><dd>2011</dd></div>
+      <div class="reveal" style="--d:.18s"><dt>Miltal</dt><dd>28 412 mil</dd></div>
+      <div class="reveal" style="--d:.24s"><dt>Växellåda</dt><dd>Automat, 6 steg</dd></div>
+      <div class="reveal" style="--d:.3s"><dt>Färg</dt><dd>Vintergrå metallic</dd></div>
+      <div class="reveal" style="--d:.36s"><dt>Antal ägare</dt><dd>1 (privatperson)</dd></div>
+      <div class="reveal" style="--d:.42s"><dt>Bränsle</dt><dd>Diesel</dd></div>
+    </dl>
+  </section>
 
-      <ol class="process-steps">
-        <li>
-          <span class="step-num">1</span>
+  <!-- ======================= FEATURES ======================= -->
+  <section class="features" id="fordelar" aria-label="Fördelar">
+    <header class="section-head">
+      <p class="eyebrow reveal">Kapitel 02 — Erbjudandet</p>
+      <h2 class="display"><span data-split="words">DÄRFÖR NIKÖPERMINBIL</span></h2>
+      <p class="section-lead reveal">Sex skäl, framtagna av vår analysavdelning, som också är vår ägare, som också är säljaren.</p>
+    </header>
+
+    <div class="cards">
+      <article class="card reveal" style="--d:0s" data-tilt>
+        <span class="card-num">01</span>
+        <h3>Fast pris</h3>
+        <p>Inga bud. Ingen förhandling. Ingen ånger. Marknaden har talat, och marknaden är vi.</p>
+      </article>
+      <article class="card reveal" style="--d:.08s" data-tilt>
+        <span class="card-num">02</span>
+        <h3>Trygghet</h3>
+        <p>Hela processen är granskad av oss och godkänd av oss. Noll anmärkningar. Noll insyn.</p>
+      </article>
+      <article class="card reveal" style="--d:.16s" data-tilt>
+        <span class="card-num">03</span>
+        <h3>Exklusivitet</h3>
+        <p>Endast ett (1) exemplar i exakt detta skick, med exakt dessa repor. Konkurrensen är obefintlig. Rabatten också.</p>
+      </article>
+      <article class="card reveal" style="--d:.24s" data-tilt>
+        <span class="card-num">04</span>
+        <h3>Snabb leverans</h3>
+        <p>Bilen står redan här. I hela den här affären är det bara du som är långsam.</p>
+      </article>
+      <article class="card reveal" style="--d:.32s" data-tilt>
+        <span class="card-num">05</span>
+        <h3>Värdebeständigt</h3>
+        <p>Priset har aldrig sänkts och kommer aldrig att sänkas. Det är det tryggaste löfte vi kan ge dig.</p>
+      </article>
+      <article class="card reveal" style="--d:.4s" data-tilt>
+        <span class="card-num">06</span>
+        <h3>Personlig service</h3>
+        <p>Vår kundtjänst hör av sig till dig, när det passar oss. Du kontaktar oss enklast genom att vänta.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======================= PROCESS (horisontell) ======================= -->
+  <section class="process" id="process" aria-label="Processen">
+    <div class="process-sticky">
+      <header class="section-head process-head">
+        <p class="eyebrow">Kapitel 03 — Resan</p>
+        <h2 class="display"><span data-split="words">SÅ GÅR DET TILL</span></h2>
+        <p class="process-count" aria-hidden="true"><span id="stepNow">01</span> / 04</p>
+      </header>
+      <div class="process-track" id="processTrack">
+        <article class="panel">
+          <span class="panel-num" aria-hidden="true">01</span>
           <h3>Ansök</h3>
-          <p>Skicka en kostnadsfri intresseanmälan nedan under Kontakt.</p>
-        </li>
-        <li>
-          <span class="step-num">2</span>
+          <p>Skicka en kostnadsfri intresseanmälan. Detta är processens enda kostnadsfria moment.</p>
+        </article>
+        <article class="panel">
+          <span class="panel-num" aria-hidden="true">02</span>
           <h3>Utvärdering</h3>
-          <p>Vår investeringskommitté granskar din ansökan. Normal handläggningstid är 6–8 månader.</p>
-        </li>
-        <li>
-          <span class="step-num">3</span>
+          <p>Vår investeringskommitté granskar din ansökan i lugn och ro. Normal handläggningstid: 6–8 månader.</p>
+        </article>
+        <article class="panel">
+          <span class="panel-num" aria-hidden="true">03</span>
           <h3>Betalning</h3>
-          <p>Betalning sker i sin helhet och i förskott, innan bilen lämnar garaget.</p>
-        </li>
-        <li>
-          <span class="step-num">4</span>
+          <p>Hela beloppet erläggs i förskott, innan bilen lämnar garaget. Tryggt för alla parter. Främst en.</p>
+        </article>
+        <article class="panel">
+          <span class="panel-num" aria-hidden="true">04</span>
           <h3>Hämtning</h3>
           <p>Bilen hämtas på plats i Mellansverige. Bränsle ingår, som brukligt, ej.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="faq" class="section">
-    <div class="wrap">
-      <h2>Vanliga frågor</h2>
-      <dl class="faq-list">
-        <div class="faq-item">
-          <dt>Köper ni verkligen inte bilar?</dt>
-          <dd>Nej. Det har vi aldrig gjort. Det är själva affärsidén.</dd>
-        </div>
-        <div class="faq-item">
-          <dt>Kan jag lämna in min egen bil i inbyte?</dt>
-          <dd>Nej. Se föregående svar.</dd>
-        </div>
-        <div class="faq-item">
-          <dt>Går priset att förhandla?</dt>
-          <dd>Priset är satt av marknaden, det vill säga av oss.</dd>
-        </div>
-        <div class="faq-item">
-          <dt>Erbjuder ni finansiering?</dt>
-          <dd>Vi hänvisar gärna till din bank. Vi rekommenderar att fråga snällt.</dd>
-        </div>
-        <div class="faq-item">
-          <dt>Hur lång är leveranstiden?</dt>
-          <dd>Bilen står redan här. Det är du som behöver skynda dig.</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
-
-  <section id="kontakt" class="section section-alt">
-    <div class="wrap">
-      <h2>Kontakt</h2>
-      <p class="section-lead">Vår kundtjänst nås enklast genom att inte höra av sig. Vi hör i stället av oss till dig.</p>
-
-      <div class="apply-box">
-        <button type="button" id="applyBtn" class="cta cta-secondary">Skicka intresseanmälan</button>
-        <p id="applyResult" class="apply-result" hidden></p>
-        <p class="fine-print">Inga personuppgifter samlas in, skickas eller lagras. Referensnumret genereras lokalt i din webbläsare och försvinner när du lämnar sidan.</p>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- ======================= FÖRHANDLINGSSIMULATORN ======================= -->
+  <section class="nego" id="forhandla" aria-label="Förhandlingssimulatorn">
+    <header class="section-head">
+      <p class="eyebrow reveal">Kapitel 04 — Interaktivt</p>
+      <h2 class="display"><span data-split="words">FÖRHANDLA MED VÄGGEN</span></h2>
+      <p class="section-lead reveal">Förhandlingssimulatorn™ — upplev känslan av att förhandla, utan risken att det påverkar någonting.</p>
+    </header>
+
+    <div class="nego-box reveal">
+      <div class="nego-readouts">
+        <div class="readout">
+          <span class="readout-label">Ditt bud</span>
+          <span class="readout-value" id="bidValue">850 000 kr</span>
+        </div>
+        <div class="readout readout-market">
+          <span class="readout-label">Marknadens svar</span>
+          <span class="readout-value">4 750 000 kr</span>
+        </div>
+      </div>
+
+      <div class="nego-slider">
+        <span class="market-pin" style="--pos:47.5%" aria-hidden="true"><i></i>marknaden</span>
+        <input type="range" id="bidRange" min="0" max="10000000" step="50000" value="850000"
+               aria-label="Föreslå ett pris i kronor">
+        <div class="nego-scale" aria-hidden="true"><span>0 kr</span><span>10 000 000 kr</span></div>
+      </div>
+
+      <p class="nego-response" id="bidResponse" aria-live="polite">Dra i reglaget för att inleda en helt verkningslös förhandling.</p>
+      <p class="fine">Sannolikhet att ditt bud påverkar priset: 0,0 %. Siffran är kvalitetssäkrad.</p>
+    </div>
+  </section>
+
+  <!-- ======================= FAQ ======================= -->
+  <section class="faq" id="faq" aria-label="Vanliga frågor">
+    <header class="section-head">
+      <p class="eyebrow reveal">Kapitel 05 — Klargöranden</p>
+      <h2 class="display"><span data-split="words">VANLIGA FRÅGOR</span></h2>
+    </header>
+
+    <div class="faq-list">
+      <details class="faq-item reveal" style="--d:0s">
+        <summary>Köper ni verkligen inte bilar?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <p>Nej. Det har vi aldrig gjort. Det är själva affärsidén.</p>
+      </details>
+      <details class="faq-item reveal" style="--d:.06s">
+        <summary>Kan jag lämna min egen bil i inbyte?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <p>Nej. Se föregående svar.</p>
+      </details>
+      <details class="faq-item reveal" style="--d:.12s">
+        <summary>Går priset att förhandla?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <p>Priset är satt av marknaden, det vill säga av oss. Du är välkommen att prova simulatorn ovan och känna efter.</p>
+      </details>
+      <details class="faq-item reveal" style="--d:.18s">
+        <summary>Erbjuder ni finansiering?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <p>Vi hänvisar gärna till din bank. Vi rekommenderar att fråga snällt.</p>
+      </details>
+      <details class="faq-item reveal" style="--d:.24s">
+        <summary>Hur lång är leveranstiden?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <p>Bilen står redan här. Det är du som behöver skynda dig.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ======================= FINALE ======================= -->
+  <section class="finale" id="kontakt" aria-label="Kontakt">
+    <div class="finale-glow" aria-hidden="true"></div>
+    <p class="eyebrow reveal">Kapitel 06 — Beslutet</p>
+    <h2 class="finale-title"><span data-split="chars">VÅGA ÄGA.</span></h2>
+    <p class="finale-sub reveal">En bil. En köpare. Ett pris.<br>Statistiskt sett är chansen att det blir du: <em>större än noll.</em></p>
+
+    <p class="finale-price" aria-label="Fast pris 4 750 000 kronor"><span id="priceCounter" data-target="4750000">0</span>&nbsp;kr</p>
+
+    <div class="apply">
+      <button type="button" id="applyBtn" class="btn btn-gold btn-big" data-magnet>Skicka intresseanmälan</button>
+      <div class="burst" id="burst" aria-hidden="true"></div>
+      <p id="applyResult" class="apply-result" hidden></p>
+      <p class="fine">Inga personuppgifter samlas in, skickas eller lagras. Referensnumret genereras lokalt i din webbläsare och försvinner när du lämnar sidan.</p>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p>© 2026 niköperminbil</p>
-    <p class="footer-tagline">Marknadsledande inom att inte köpa din bil sedan 2026.</p>
+<footer class="footer">
+  <div class="marquee marquee-footer" aria-hidden="true">
+    <div class="marquee-track marquee-reverse">
+      <span>INGEN BIL SÅLD SEDAN STARTEN&ensp;✦&ensp;VI KALLAR DET EXKLUSIVITET&ensp;✦&ensp;NIKÖPERMINBIL.SE&ensp;✦&ensp;</span>
+      <span>INGEN BIL SÅLD SEDAN STARTEN&ensp;✦&ensp;VI KALLAR DET EXKLUSIVITET&ensp;✦&ensp;NIKÖPERMINBIL.SE&ensp;✦&ensp;</span>
+    </div>
+  </div>
+  <div class="footer-inner">
+    <p class="footer-logo">nik<span class="au">ö</span>perminbil</p>
+    <p>© 2026 niköperminbil · Org.nr: hemligt, men imponerande</p>
+    <p class="footer-tag">Marknadsledande inom att inte köpa din bil sedan 2026.</p>
   </div>
 </footer>
 
-<script>
-  document.getElementById('applyBtn').addEventListener('click', function () {
-    var ref = 'NPMB-' + Math.floor(10000 + Math.random() * 90000);
-    var result = document.getElementById('applyResult');
-    result.textContent = 'Tack. Din intresseanmälan (ref. ' + ref + ') har registrerats i minnet på den här sidan, och ingenstans annars. Genomsnittlig svarstid: 6–8 månader.';
-    result.hidden = false;
-    this.setAttribute('disabled', 'true');
-  });
-</script>
-
+<script src="script.js" defer></script>
 </body>
 </html>
